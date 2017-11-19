@@ -1,2 +1,4 @@
 ---
-# defaults file for docker-secrets
+# List of secrets
+secrets:
+  hello: "world"

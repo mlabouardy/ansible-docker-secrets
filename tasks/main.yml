@@ -1,2 +1,4 @@
 ---
-# tasks file for docker-secrets
+- name: Create Docker Secrets
+  shell: echo "{{item.value}}" | docker secret create {{item.key}} -
+  with_dict: secrets
